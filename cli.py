@@ -93,13 +93,13 @@ if __name__ == '__main__':
         if not softclick_delay.isdigit() and not softclick_delay == 'default':
             print(colored('That is not a digit!', 'red'))
             softclick_delay = ''
-        else:
+        elif softclick_delay != 'default':
             softclick_delay = int(softclick_delay)
     
     # Do use sound pitch?
     use_sound_pitch = ''
     while use_sound_pitch == '':
-        use_sound_pitch = mb.askyesno('Sound pitch', 'Do you want to pitch sound? This can add variation to clicks and make them more realistic.')
+        use_sound_pitch = mb.askyesno('Sound pitch', 'Do you want to pitch sound? This can add variation to clicks and make them more realistic. However this also slows down rendering.')
     
     from generate_clicks import generate_clicks
 
