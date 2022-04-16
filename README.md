@@ -14,7 +14,7 @@
 
 Proper GUI will be added soon, until then I made an easy CLI tool.
 # Download
-[For binary builds with Pyinstaller, click here](https://github.com/zeopticz/zcb/releases)
+[For binary builds with Pyinstaller, click here](https://github.com/zeopticz/zcb-2.0/releases/)
 
 # Supported files (macros)
 [Echo](https://discord.gg/7yEHbBVswh) `(.echo)` (make sure you don't record the macro in binary, else, convert it (ask in the echo server))
