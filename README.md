@@ -18,6 +18,7 @@ Proper GUI will be added soon, until then I made an easy CLI tool.
 
 # Supported files (macros)
 [Echo](https://discord.gg/7yEHbBVswh) `(.echo)` (make sure you don't record the macro in binary, else, convert it (ask in the echo server))
+
 [TASbot](https://discord.gg/RbWPSYPyrS) `(.json)`
 
 # Click pack guide
