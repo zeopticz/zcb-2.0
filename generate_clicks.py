@@ -81,7 +81,7 @@ def generate_clicks(
                 softclick_duration = softclick_duration_option
 
             
-            if (action[0] / replay_fps * 1000 - last_action_time < softclick_duration): # If it's the time to insert a softclick/softrelease
+            if (action[0] / replay_fps * float(1000) - last_action_time < softclick_duration): # If it's the time to insert a softclick/softrelease
                 # All code here will only run if we need to make a softclick/softrelease.
 
                 # If the action is to click:
