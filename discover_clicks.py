@@ -1,7 +1,3 @@
-'''Longass function to process a clickpack.
-how is this 273 lines
-'''
-
 from pydub import AudioSegment
 from os import walk, path
 from sys import exit as sysexit
