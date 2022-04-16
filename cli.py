@@ -90,8 +90,11 @@ if __name__ == '__main__':
         softclick_delay = input('\nSoftclick delay (ms, press Enter for default value): ')
         if softclick_delay == '':
             softclick_delay = 'default'
-        if not softclick_delay.isdigit():
-            softclick_delay = 'default'
+        if not softclick_delay.isdigit() and not softclick_delay == 'default':
+            print(colored('That is not a digit!', 'red'))
+            softclick_delay = ''
+        else:
+            softclick_delay = int(softclick_delay)
     
     # Do use sound pitch?
     use_sound_pitch = ''
