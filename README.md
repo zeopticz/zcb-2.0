@@ -6,10 +6,12 @@
 
 > If you have any questions, visit our Discord server:
 > [Click here](https://discord.gg/kGPAjmdpUX)
+
 ![Discord widget](https://discordapp.com/api/guilds/952180713803878431/widget.png?style=banner2)
 
 # Example
 ![zcb](https://cdn.discordapp.com/attachments/783966433641365504/964760765225652274/zcb.gif)
+
 Proper GUI will be added soon, until then I made an easy CLI tool.
 # Download
 [For binary builds with Pyinstaller, click here](https://github.com/zeopticz/zcb/releases)
