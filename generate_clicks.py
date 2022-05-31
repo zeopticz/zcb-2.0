@@ -34,7 +34,10 @@ def generate_clicks(
     output_sound = output_sound.set_frame_rate(44100) # Pydub won't set this automatically (cuz it's empty duh)
 
     # Audio time = (the last frame of macro / fps of replay (to get seconds) + release duration time + 0.2 of silence) * 1000 (to get ms)
-    audio_time = (p1_macro[-1][0] / replay_fps + p1_releases[0].duration_seconds + 0.2) * 1000
+    try:
+        audio_time = (p1_macro[-1][0] / replay_fps + p1_releases[0].duration_seconds if p1_releases[0].duration_seconds != 0 else 1 + 0.2) * 1000
+    except IndexError: # If player 1 has no inputs, try using the player 2 inputs.
+        audio_time = (p2_macro[-1][0] / replay_fps + p1_releases[0].duration_seconds if p1_releases[0].duration_seconds != 0 else 1 + 0.2) * 1000
     
     # Add (macro second length) of silence to our empty AudioSegment
     output_sound += AudioSegment.silent(audio_time)
@@ -86,7 +89,6 @@ def generate_clicks(
 
                 # If the action is to click:
                 if action[1] == 'click':
-
                     if use_sound_pitch:
                         # Create a pitched sound.
                         pitched_sound = random.choice(softclicks)
@@ -133,9 +135,7 @@ def generate_clicks(
                         pbar.update(1) # Update progressbar
             
             else: # If it's a regular click and not a softclick
-
                 if action[1] == "click":
-
                     if use_sound_pitch:
                         # Create a pitched sound.
                         pitched_sound = random.choice(clicks)
@@ -159,7 +159,6 @@ def generate_clicks(
                         pbar.update(1) # Update progressbar
                 
                 elif action[1] == "release":
-
                     if use_sound_pitch:
                         # Create a pitched sound.
                         pitched_sound = random.choice(releases)
