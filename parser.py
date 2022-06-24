@@ -10,7 +10,7 @@ def parse_echo(replay_file):
     '''
 
     replay = json.loads(replay_file)
-    replay_fps = round(int(replay['FPS']))
+    replay_fps = int(round(replay['FPS']))
     replay_data = replay['Echo Replay']
     last_click_action = False
     last_p2_click_action = False
@@ -73,7 +73,7 @@ def parse_tasbot(replay_file):
     '''
     
     replay = json.loads(replay_file)
-    replay_fps = round(int(replay['fps']))
+    replay_fps = int(round(replay['fps']))
     replay_data = replay['macro']
     last_click_action = False
     last_p2_click_action = False
