@@ -1,6 +1,6 @@
 
 # ZCB 2.0 (Zeo's ClickBot)
-**[Geometry Dash](https://en.wikipedia.org/wiki/Geometry_Dash)** Clickbot, written in [Python](https://www.python.org/). It is the rewrite of ZCB with better codebase, easier usage, better sound.
+[Geometry Dash](https://en.wikipedia.org/wiki/Geometry_Dash) Clickbot, written in [Python](https://www.python.org/). It is the rewrite of ZCB with better codebase, easier usage, and better sound.
 
 ![ZCB logo made by Frigel](https://cdn.discordapp.com/attachments/952196428598501426/952630587162775562/icon.jpg)
 
@@ -12,12 +12,11 @@
 # Example
 ![zcb](https://cdn.discordapp.com/attachments/783966433641365504/964760765225652274/zcb.gif)
 
-Proper GUI will be added soon, until then I made an easy CLI tool.
 # Download
 [For binary builds with Pyinstaller, click here](https://github.com/zeopticz/zcb-2.0/releases/)
 
-# Supported files (macros)
-[Echo](https://discord.gg/7yEHbBVswh) `(.echo)` (make sure you don't record the macro in binary, else, convert it (ask in the echo server))
+# Supported files (Macros)
+[Echo](https://discord.gg/7yEHbBVswh) `(.echo)` (Make sure you don't record it in binary, if you do so, convert it.)
 
 [TASbot](https://discord.gg/RbWPSYPyrS) `(.json)`
 
