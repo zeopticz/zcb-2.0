@@ -52,7 +52,7 @@ class parser:
         '''
         # Define basic info.
         replay = json.loads(replay_file)
-        replay_fps = int(round(replay['FPS']))
+        replay_fps = replay['FPS']
         replay_data = replay['Echo Replay']
         last_click_action = False
         last_p2_click_action = False
@@ -108,7 +108,7 @@ class parser:
         '''
         # Define basic info.
         replay = json.loads(replay_file)
-        replay_fps = int(round(replay['fps']))
+        replay_fps = replay['fps']
         replay_data = replay['macro']
         last_click_action = False
         last_p2_click_action = False
