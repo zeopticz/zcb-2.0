@@ -52,20 +52,29 @@ class parser:
         '''
         # Define basic info.
         replay = json.loads(replay_file)
-        replay_fps = replay['FPS']
-        replay_data = replay['Echo Replay']
+        replay_fps = replay.get('FPS')
+        replay_data = replay.get('Echo Replay')
         last_click_action = False
         last_p2_click_action = False
+
+        if replay_fps is None:
+            printerr("Macro corrupted.")
+            input()
+            exit()
+        if replay_data is None:
+            printerr("Empty macro.")
+            input()
+            exit()
 
         p1_clicks = []
         p2_clicks = []
 
         for frame in replay_data: # Iterate through every frame of the macro.
-            last_frame = frame['Frame']
-            last_action = frame['Hold']
-            is_p2 = frame["Player 2"]
+            last_frame = frame.get('Frame')
+            last_action = frame.get('Hold')
+            is_p2 = frame.get("Player 2")
             try:
-                is_action = frame['Action']
+                is_action = frame.get('Action')
             except Exception:
                 is_action = True
 
@@ -108,22 +117,27 @@ class parser:
         '''
         # Define basic info.
         replay = json.loads(replay_file)
-        replay_fps = replay['fps']
-        replay_data = replay['macro']
+        replay_fps = replay.get('fps')
+        replay_data = replay.get('macro')
         last_click_action = False
         last_p2_click_action = False
+
+        if replay_fps is None or replay_data is None:
+            printerr("Corrupted macro.")
+            input()
+            exit()
 
         p1_clicks = []
         p2_clicks = []
 
         for frame in replay_data: # Iterate through every frame of the macro.
-            last_frame = frame['frame']
+            last_frame = frame.get('frame')
             
-            player_1_frame = frame['player_1']
-            player_2_frame = frame['player_2']
+            player_1_frame = frame.get('player_1')
+            player_2_frame = frame.get('player_2')
 
-            last_p1_action = player_1_frame['click'] == 1
-            last_p2_action = player_2_frame['click'] == 1
+            last_p1_action = player_1_frame.get('click') == 1
+            last_p2_action = player_2_frame.get('click') == 1
 
             if not last_click_action and last_p1_action:
                 last_click_action = True
