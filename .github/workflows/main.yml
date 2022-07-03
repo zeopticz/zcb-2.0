@@ -35,11 +35,6 @@ jobs:
         with:
           name: zcb
           path: ./zcb
-      - name: Generate file checksums
-        run: |
-          sha256sum \
-           ./zcb/zcb.exe
-           > checksums.txt
       - uses: "marvinpinto/action-automatic-releases@latest"
         name: Create Release and Upload Assets
         id: create_release
