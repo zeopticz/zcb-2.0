@@ -23,3 +23,32 @@ jobs:
       with:
         name: zcb
         path: src/dist/windows
+  
+  pre-release:
+    name: Create GitHub Release
+    needs: [build]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Fetch latest build artifact
+        uses: actions/download-artifact@v1
+        with:
+          name: zcb
+          path: ./zcb
+      - name: Generate file checksums
+        run: |
+          sha256sum \
+           ./zcb/zcb.exe
+           > checksums.txt
+      - uses: "marvinpinto/action-automatic-releases@latest"
+        name: Create Release and Upload Assets
+        id: create_release
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "latest"
+          prerelease: true
+          title: "Latest Windows Development Build"
+          files: |
+            zcb/zcb.exe
+            checksums.txt
+       
