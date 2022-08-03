@@ -147,7 +147,7 @@ class parser:
                 '''
                 p1_clicks.append([last_frame, 'click'])
             elif not last_p1_action and last_click_action: # If the action is from player 1.
-                last_click_action = False
+                last_p2_click_action = False
                 p1_clicks.append([last_frame, 'release'])
 
             if not last_p2_click_action and last_p2_action: # If the action is from player 2.
