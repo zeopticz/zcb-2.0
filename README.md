@@ -1,3 +1,10 @@
+# [THIS IS DEPRECATED, USE ZCB 3 INSTEAD](https://github.com/zeozeozeo/zcb3/releases)
+# [THIS IS DEPRECATED, USE ZCB 3 INSTEAD](https://github.com/zeozeozeo/zcb3/releases)
+# [THIS IS DEPRECATED, USE ZCB 3 INSTEAD](https://github.com/zeozeozeo/zcb3/releases)
+# [THIS IS DEPRECATED, USE ZCB 3 INSTEAD](https://github.com/zeozeozeo/zcb3/releases)
+# [THIS IS DEPRECATED, USE ZCB 3 INSTEAD](https://github.com/zeozeozeo/zcb3/releases)
+# [THIS IS DEPRECATED, USE ZCB 3 INSTEAD](https://github.com/zeozeozeo/zcb3/releases)
+# [THIS IS DEPRECATED, USE ZCB 3 INSTEAD](https://github.com/zeozeozeo/zcb3/releases)
 
 # ZCB 2.0 (Zeo's ClickBot)
 [Geometry Dash](https://en.wikipedia.org/wiki/Geometry_Dash) Clickbot, written in [Python](https://www.python.org/). It is the rewrite of ZCB with better codebase, easier usage, and better sound.
