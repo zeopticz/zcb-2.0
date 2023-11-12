@@ -1,3 +1,24 @@
+# THIS IS DEPRECATED, USE ZCB 3 INSTEAD: https://github.com/zeozeozeo/zcb3/releases
+# THIS IS DEPRECATED, USE ZCB 3 INSTEAD: https://github.com/zeozeozeo/zcb3/releases
+# THIS IS DEPRECATED, USE ZCB 3 INSTEAD: https://github.com/zeozeozeo/zcb3/releases
+# THIS IS DEPRECATED, USE ZCB 3 INSTEAD: https://github.com/zeozeozeo/zcb3/releases
+# THIS IS DEPRECATED, USE ZCB 3 INSTEAD: https://github.com/zeozeozeo/zcb3/releases
+# THIS IS DEPRECATED, USE ZCB 3 INSTEAD: https://github.com/zeozeozeo/zcb3/releases
+# THIS IS DEPRECATED, USE ZCB 3 INSTEAD: https://github.com/zeozeozeo/zcb3/releases
+# THIS IS DEPRECATED, USE ZCB 3 INSTEAD: https://github.com/zeozeozeo/zcb3/releases
+# THIS IS DEPRECATED, USE ZCB 3 INSTEAD: https://github.com/zeozeozeo/zcb3/releases
+# THIS IS DEPRECATED, USE ZCB 3 INSTEAD: https://github.com/zeozeozeo/zcb3/releases
+# THIS IS DEPRECATED, USE ZCB 3 INSTEAD: https://github.com/zeozeozeo/zcb3/releases
+# THIS IS DEPRECATED, USE ZCB 3 INSTEAD: https://github.com/zeozeozeo/zcb3/releases
+# THIS IS DEPRECATED, USE ZCB 3 INSTEAD: https://github.com/zeozeozeo/zcb3/releases
+# THIS IS DEPRECATED, USE ZCB 3 INSTEAD: https://github.com/zeozeozeo/zcb3/releases
+# THIS IS DEPRECATED, USE ZCB 3 INSTEAD: https://github.com/zeozeozeo/zcb3/releases
+# THIS IS DEPRECATED, USE ZCB 3 INSTEAD: https://github.com/zeozeozeo/zcb3/releases
+# THIS IS DEPRECATED, USE ZCB 3 INSTEAD: https://github.com/zeozeozeo/zcb3/releases
+# THIS IS DEPRECATED, USE ZCB 3 INSTEAD: https://github.com/zeozeozeo/zcb3/releases
+# THIS IS DEPRECATED, USE ZCB 3 INSTEAD: https://github.com/zeozeozeo/zcb3/releases
+# THIS IS DEPRECATED, USE ZCB 3 INSTEAD: https://github.com/zeozeozeo/zcb3/releases
+
 import sys
 sys.dont_write_bytecode = True
 
@@ -19,10 +40,16 @@ print('''
 ╚══███╔╝██╔════╝██╔══██╗
   ███╔╝ ██║     ██████╔╝
  ███╔╝  ██║     ██╔══██╗
-███████╗╚██████╗██████╔╝ v2.0
+███████╗╚██████╗██████╔╝ v2.0 (v3.0 update available: https://github.com/zeozeozeo/zcb3/releases)
 ╚══════╝ ╚═════╝╚═════╝ 
     Zeo's Click Bot
 '''.replace('█', colors.fg['magenta']+'█'+colors.reset))
+
+# https://github.com/zeozeozeo/zcb3/releases
+for i in range(100):
+    print(colors.fg['red'] + "THIS IS DEPRECATED, USE ZCB 3 INSTEAD: https://github.com/zeozeozeo/zcb3/releases" + colors.reset)
+print("Discord server: https://discord.gg/b4kBQyXYZT")
+
 log.printinfo('Select a replay!')
 
 macro_input = ''
